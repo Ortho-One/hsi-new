@@ -172,8 +172,8 @@ export const NeuralSatelliteHub: React.FC = () => {
                   <Ambulance className="w-4 h-4" />
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#1D4589] block">PILLAR 01</span>
-                  <h4 className="text-xs font-bold text-[#14213D]">SMART Pillar</h4>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#1D4589] block">01 · RESPONSE</span>
+                  <h4 className="text-sm font-extrabold text-[#14213D]">SMART</h4>
                 </div>
               </div>
               <ArrowRight className="w-4 h-4 text-[#1D4589]" />
@@ -202,8 +202,8 @@ export const NeuralSatelliteHub: React.FC = () => {
                   <Shield className="w-4 h-4" />
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#1D4589] block">PILLAR 02</span>
-                  <h4 className="text-xs font-bold text-[#14213D]">SAFE Pillar</h4>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#1D4589] block">02 · AWARENESS</span>
+                  <h4 className="text-sm font-extrabold text-[#14213D]">SAFE</h4>
                 </div>
               </div>
               <ArrowRight className="w-4 h-4 text-[#1D4589]" />
@@ -232,8 +232,8 @@ export const NeuralSatelliteHub: React.FC = () => {
                   <Activity className="w-4 h-4" />
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#1D4589] block">PILLAR 03</span>
-                  <h4 className="text-xs font-bold text-[#14213D]">SHAPE Pillar</h4>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#1D4589] block">03 · PROFILING</span>
+                  <h4 className="text-sm font-extrabold text-[#14213D]">SHAPE</h4>
                 </div>
               </div>
               <ArrowRight className="w-4 h-4 text-[#1D4589]" />
@@ -262,8 +262,8 @@ export const NeuralSatelliteHub: React.FC = () => {
                   <Stethoscope className="w-4 h-4" />
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#1D4589] block">PILLAR 04</span>
-                  <h4 className="text-xs font-bold text-[#14213D]">SURE Pillar</h4>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#1D4589] block">04 · SURGERY</span>
+                  <h4 className="text-sm font-extrabold text-[#14213D]">SURE</h4>
                 </div>
               </div>
               <ArrowRight className="w-4 h-4 text-[#1D4589]" />

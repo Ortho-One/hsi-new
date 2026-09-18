@@ -34,7 +34,7 @@ export default function HomePage() {
           {/* Main Hero Header */}
           <div className="text-center max-w-4xl mx-auto space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1D4589]/10 border border-[#1D4589]/20 text-[#1D4589] text-xs font-bold uppercase tracking-wider">
-              <ShieldCheck className="w-4 h-4 text-[#C68608]" /> EST. 2024 · ORTHO-ONE COIMBATORE
+              <ShieldCheck className="w-4 h-4 text-[#C68608]" /> EST. 2007 · ORTHO-ONE COIMBATORE
             </div>
             
             {/* Bold Modern Sans Headline in Dark Navy (#1D4589) */}

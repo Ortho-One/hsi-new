@@ -245,13 +245,12 @@ export default function SmartPage() {
                   ></textarea>
                 </div>
 
-                <button
-                  type="submit"
-                  disabled={formStatus === 'submitting'}
-                  className="w-full pill-btn-primary text-xs justify-center py-3"
+                <a
+                  href="tel:+919790551264"
+                  className="w-full pill-btn-primary text-xs justify-center py-3.5 flex items-center gap-2 shadow-lg"
                 >
-                  <Send className="w-4 h-4" /> {formStatus === 'submitting' ? 'Submitting...' : 'Dispatch SOW Request'}
-                </button>
+                  <Phone className="w-4 h-4 text-[#F6AF1F]" /> Call Sports Ops (+91 97905 51264) for SOW Support
+                </a>
               </form>
             )}
           </div>
@@ -259,33 +258,31 @@ export default function SmartPage() {
         </div>
       )}
 
-      {/* SMC Teleconsult View */}
+      {/* SMC Teleconsult View (Section 19.7 Spec) */}
       {activeTab === 'smc' && (
-        <div className="p-8 md:p-12 rounded-3xl glass-card border border-white/10 max-w-3xl mx-auto text-center space-y-6">
-          <div className="w-16 h-16 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center mx-auto text-emerald-400">
+        <div className="p-8 md:p-12 rounded-3xl glass-card border border-[#1D4589]/20 max-w-2xl mx-auto text-center space-y-6 shadow-xl">
+          <div className="w-16 h-16 rounded-2xl bg-[#1D4589]/15 border border-[#1D4589]/30 flex items-center justify-center mx-auto text-[#1D4589]">
             <Video className="w-8 h-8" />
           </div>
-          <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest bg-emerald-950/40 px-3 py-1 rounded-full border border-emerald-500/30">
-            SMC TELECONSULTATION PORTAL ONLINE
+          <span className="text-xs font-bold text-[#1D4589] uppercase tracking-widest bg-[#1D4589]/10 px-4 py-1.5 rounded-full border border-[#1D4589]/20 inline-block">
+            SMC TELECONSULTATION PORTAL
           </span>
-          <h3 className="text-2xl font-bold text-white font-serif">Connect with Ortho-One Sports Physician</h3>
-          <p className="text-zinc-300 text-sm leading-relaxed max-w-xl mx-auto">
-            Get instant video guidance from sports doctors for acute strain assessment, MRI report reviews, and rehabilitation progress checks without traveling.
+          <h3 className="text-2xl font-extrabold text-[#14213D] font-serif">Connect with Ortho-One Sports Physician</h3>
+          <p className="text-[#2B3A55] text-sm leading-relaxed max-w-md mx-auto font-medium">
+            Get video guidance from sports doctors for acute strain assessment, report reviews, and rehab progress checks.
           </p>
 
-          <div className="p-4 rounded-2xl bg-white/5 border border-white/10 max-w-md mx-auto text-xs text-left space-y-2">
-            <div className="flex justify-between font-semibold">
-              <span className="text-zinc-300">Doctor Status:</span>
-              <span className="text-emerald-400 font-bold">Dr. Emil Cyril (Available)</span>
-            </div>
-            <div className="flex justify-between text-zinc-400">
-              <span>Consultation Helpline:</span>
-              <a href="tel:+919790551264" className="text-[#F6AF1F] font-bold">+91 97905 51264</a>
-            </div>
+          <div className="p-5 rounded-2xl bg-[#1D4589]/10 border border-[#1D4589]/20 max-w-sm mx-auto text-center space-y-2">
+            <div className="text-xs font-semibold text-[#5A6B85]">Operations &amp; SMC Helpline</div>
+            <div className="text-xl font-extrabold text-[#14213D] tracking-wide">+91 97905 99880</div>
+            <div className="text-[11px] text-[#1D4589] font-medium">Mr. Jeyamurugan (PRO / Ops)</div>
           </div>
 
-          <a href="tel:+919790551264" className="pill-btn-primary text-sm inline-flex">
-            <Phone className="w-4 h-4" /> Dial Telehealth Helpline
+          <a 
+            href="tel:+919790599880" 
+            className="pill-btn-primary text-sm inline-flex items-center gap-2 py-3 px-8 shadow-lg"
+          >
+            <Phone className="w-4 h-4 text-[#F6AF1F]" /> Call PRO Ops (+91 97905 99880)
           </a>
         </div>
       )}

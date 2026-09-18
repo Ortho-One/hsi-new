@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 relative z-10 space-y-16">
         
         {/* Top: Ecosystem Identity & 4 Pillars Summary */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-12 border-b border-white/10">
           
           <div className="space-y-4">
             <div className="flex items-center gap-3">
@@ -44,9 +44,9 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs">
               <li><Link href="/smart" className="hover:text-[#F6AF1F] transition-colors">SMART — Sports Medicine Response (SOW / SMC)</Link></li>
-              <li><Link href="/safe" className="hover:text-[#F6AF1F] transition-colors">SAFE — Awareness & Capacity Building</Link></li>
-              <li><Link href="/shape" className="hover:text-[#F6AF1F] transition-colors">SHAPE — Health Diagnostics & Membership</Link></li>
-              <li><Link href="/sure" className="hover:text-[#F6AF1F] transition-colors">SURE — Surgery & RTP Rehabilitation</Link></li>
+              <li><Link href="/safe" className="hover:text-[#F6AF1F] transition-colors">SAFE — Awareness &amp; Capacity Building</Link></li>
+              <li><Link href="/shape" className="hover:text-[#F6AF1F] transition-colors">SHAPE — Health Diagnostics &amp; Membership</Link></li>
+              <li><Link href="/sure" className="hover:text-[#F6AF1F] transition-colors">SURE — Surgery &amp; RTP Rehabilitation</Link></li>
             </ul>
           </div>
 
@@ -66,18 +66,6 @@ export default function Footer() {
                 </p>
               ))}
             </div>
-          </div>
-
-          <div>
-            <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-[#F6AF1F] pl-3">
-              Leadership & Trust
-            </h4>
-            <p className="text-xs text-zinc-400 mb-2">
-              Founded by <strong className="text-white">Dr. David V. Rajan</strong> (Founder & MD).
-            </p>
-            <p className="text-xs text-zinc-400">
-              COO: Bharadwaj Malepati · Academic: Shyam Sundar · Sports MD: Dr. Emil Cyril · Physio: Paul Earnest.
-            </p>
           </div>
 
         </div>

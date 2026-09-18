@@ -89,8 +89,8 @@ export default function Navbar() {
               <a href="tel:+919790599880" className="hover:text-[#F6AF1F] transition-colors font-medium">
                 PRO Ops: +91 97905 99880
               </a>
-              <a href="tel:+919790551264" className="hover:text-[#F6AF1F] transition-colors hidden sm:inline font-medium">
-                Sports Ops: +91 97905 51264
+              <a href="tel:+919976099881" className="hover:text-[#F6AF1F] transition-colors hidden sm:inline font-medium">
+                Sports Ops: +91 99760 99881
               </a>
             </div>
           </div>

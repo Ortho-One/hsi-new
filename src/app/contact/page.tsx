@@ -25,8 +25,8 @@ export default function ContactPage() {
         <span className="text-xs font-bold uppercase tracking-widest text-[#F6AF1F] bg-[#F6AF1F]/10 px-4 py-1.5 rounded-full border border-[#F6AF1F]/20">
           COIMBATORE FACILITY & TEAM
         </span>
-        <h1 className="text-4xl md:text-5xl font-extrabold text-white font-serif italic">
-          Get in Touch with HSI Operations
+        <h1 className="text-4xl md:text-5xl font-extrabold text-[#14213D] font-serif italic">
+          Get in Touch
         </h1>
         <p className="text-zinc-300 text-sm md:text-base leading-relaxed">
           Located inside Ortho-One Orthopaedic Speciality Centre, Singanallur, Coimbatore. Reach our sports coordinators for camp bookings, athlete screening, or telehealth consultations.
