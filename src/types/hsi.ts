@@ -25,6 +25,7 @@ export interface AthleteStage {
 export interface MembershipTier {
   id: 'beginner' | 'pro' | 'elite';
   name: string;
+  subtitle?: string;
   priceYr: number;
   originalPrice: number;
   popular?: boolean;

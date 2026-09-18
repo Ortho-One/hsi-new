@@ -52,10 +52,17 @@ export default function MixpanelPricing() {
                 )}
 
                 <div>
-                  {/* Tier Title */}
-                  <div className="flex items-center justify-between mb-4">
-                    <h3 className={`text-2xl font-bold ${isPro ? 'text-white' : 'text-[#14213D]'}`}>{tier.name}</h3>
-                    <Shield className={`w-6 h-6 ${isPro ? 'text-[#F6AF1F]' : 'text-[#1D4589]'}`} />
+                  {/* Tier Title & Subtitle */}
+                  <div className="mb-4">
+                    <div className="flex items-center justify-between">
+                      <h3 className={`text-2xl font-bold ${isPro ? 'text-white' : 'text-[#14213D]'}`}>{tier.name}</h3>
+                      <Shield className={`w-6 h-6 ${isPro ? 'text-[#F6AF1F]' : 'text-[#1D4589]'}`} />
+                    </div>
+                    {tier.subtitle && (
+                      <p className={`text-xs font-semibold italic mt-1 ${isPro ? 'text-[#F6AF1F]' : 'text-[#1D4589]'}`}>
+                        &ldquo;{tier.subtitle}&rdquo;
+                      </p>
+                    )}
                   </div>
 
                   {/* Pricing */}
@@ -64,7 +71,7 @@ export default function MixpanelPricing() {
                       <span className={`text-4xl md:text-5xl font-extrabold ${isPro ? 'text-white' : 'text-[#1D4589]'}`}>
                         ₹{tier.priceYr.toLocaleString('en-IN')}
                       </span>
-                      <span className={`text-xs font-semibold ${isPro ? 'text-zinc-200' : 'text-[#5A6B85]'}`}>/ year</span>
+                      <span className={`text-xs font-semibold ${isPro ? 'text-zinc-200' : 'text-[#5A6B85]'}`}>/ year, excl. GST</span>
                     </div>
                     <span className={`text-xs font-semibold line-through block mt-1 ${isPro ? 'text-zinc-200' : 'text-[#5A6B85]'}`}>
                       Original Value: ₹{tier.originalPrice.toLocaleString('en-IN')}
