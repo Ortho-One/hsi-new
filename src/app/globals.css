@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --hsi-blue: #1D4589;
+  --hsi-blue-light: #2A5BAE;
+  --hsi-blue-dark: #122C5A;
+  --hsi-yellow: #F6AF1F;
+  --hsi-yellow-light: #FFC44D;
+  --hsi-yellow-dark: #C68608;
+  --hsi-gold: #F6AF1F;
+  
+  /* Section 11.1 — Reference Implementation Tokens */
+  --hsi-navy-bookend: #0B1B33;      /* nav / dock / footer only */
+  --hsi-surface-soft-50: #FFFBF2;
+  --hsi-surface-soft-100: #FDF6E8;  /* default page background, everywhere */
+  --hsi-surface-soft-200: #FBEED2;
+  --hsi-surface-soft-300: #F6E4BE;
+  --hsi-surface-soft: var(--hsi-surface-soft-100);
+
+  --hsi-text-heading: #14213D;
+  --hsi-text-body: #2B3A55;
+  --hsi-text-muted: #5A6B85;
+  --hsi-text-link: #1D4589;
+  --hsi-text-on-dark: #F5F5F0;      /* only inside navy bookend elements */
+
+  --hsi-glass-bg: rgba(255, 255, 255, 0.62);
+  --hsi-glass-border: rgba(29, 69, 137, 0.16);
+  --hsi-glow-blue: rgba(29, 69, 137, 0.22);
+  --hsi-glow-blue-strong: rgba(29, 69, 137, 0.38);
+  
+  --font-sans: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background-color: var(--hsi-surface-soft-100);
+  color: var(--hsi-text-body);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--hsi-text-heading);
+  font-family: var(--font-jakarta);
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: -0.025em;
+}
+
+.hsi-navy-bookend {
+  background-color: var(--hsi-navy-bookend);
+  color: var(--hsi-text-on-dark);
+}
+
+/* Section 9.2 — Navy Dot Grid Texture on Warm Ivory Base */
+.bg-neural-dots {
+  background-image: radial-gradient(rgba(29, 69, 137, 0.08) 1.5px, transparent 1.5px);
+  background-size: 32px 32px;
+}
+
+/* Zinc Noise SVG Overlay */
+.bg-noise-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* Section 9.2 — Neural Noir Glassmorphism Cards for Light Base */
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(29, 69, 137, 0.15);
+  box-shadow: 0 10px 40px rgba(29, 69, 137, 0.1);
+  color: #0F172A;
+}
+
+.glass-card-warm {
+  background: rgba(253, 246, 232, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(246, 175, 31, 0.35);
+  box-shadow: 0 15px 45px rgba(29, 69, 137, 0.15);
+  color: #1D4589;
+}
+
+.glass-card-hover {
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-hover:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(29, 69, 137, 0.35);
+  box-shadow: 0 15px 50px rgba(29, 69, 137, 0.2);
+  transform: translateY(-4px);
+}
+
+/* Glass Pill Buttons — 90/10 Palette Ratio */
+.pill-btn-primary {
+  background: linear-gradient(135deg, #1D4589 0%, #2A5BAE 100%);
+  color: #FFFFFF;
+  border-radius: 9999px;
+  padding: 0.75rem 1.75rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(29, 69, 137, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pill-btn-primary:hover {
+  background: linear-gradient(135deg, #2A5BAE 0%, #1D4589 100%);
+  box-shadow: 0 6px 28px rgba(29, 69, 137, 0.5);
+  transform: translateY(-2px);
+}
+
+.pill-btn-secondary {
+  background: rgba(29, 69, 137, 0.08);
+  border: 1px solid rgba(29, 69, 137, 0.25);
+  color: #1D4589;
+  border-radius: 9999px;
+  padding: 0.75rem 1.75rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.pill-btn-secondary:hover {
+  background: rgba(29, 69, 137, 0.15);
+  border-color: #1D4589;
+  color: #1D4589;
+}
+
+/* Keyframe Animations */
+@keyframes pulsing-branch {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.95; }
+}
+
+.animate-pulsing-branch {
+  animation: pulsing-branch 3s ease-in-out infinite;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Section 11.3 — Neural Satellite Hub Module Reference Styles */
+.hsi-hub-module {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.hsi-connector-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.hsi-line {
+  fill: none;
+  stroke-width: 2.5;
+  stroke-dasharray: 8 10;
+  opacity: 0.75;
+  transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hsi-satellite {
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--hsi-glass-bg);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--hsi-glass-border);
+  box-shadow: 0 10px 30px var(--hsi-glow-blue);
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.34, 1.56, 0.4, 1), box-shadow 0.3s ease;
+}
+
+.hsi-satellite--muted img {
+  filter: grayscale(0.8) brightness(0.95);
+}
+
+.hsi-satellite:hover, .hsi-satellite:focus-within {
+  transform: scale(1.05) !important;
+  z-index: 30;
+  box-shadow: 0 0 40px var(--hsi-glow-blue-strong);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hsi-hub-module *, .hsi-line, .hsi-hub-card, .hsi-satellite {
+    transition: none !important;
+    animation: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FDF6E8;
+}
+::-webkit-scrollbar-thumb {
+  background: #1D4589;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2A5BAE;
+}
