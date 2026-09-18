@@ -89,7 +89,7 @@ export const MEMBERSHIP_TIERS: MembershipTier[] = [
     id: 'beginner',
     name: 'Beginner Plan',
     subtitle: 'Recreational & first-time athletes',
-    priceYr: 3999,
+    priceYr: 999,
     originalPrice: 5532,
     popular: false,
     consultations: '1 Consultation (Sports Medicine / Physiotherapist / Nutrition)',
